@@ -1,6 +1,6 @@
 require("dotenv").config({ path: "./config.env" });
 const { MongoClient } = require("mongodb");
-const Db = process.env.ATLAS_URI; // "mongodb+srv://KOussama:7lCWUmzAZbCw0u5R@myfirstcluster.ju8yrvu.mongodb.net/test" //
+const Db = process.env.ATLAS_URI;
 const client = new MongoClient(Db, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

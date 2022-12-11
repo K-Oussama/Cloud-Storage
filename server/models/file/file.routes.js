@@ -60,7 +60,7 @@ exports.routesConfig = function (app) {
     ]);
 }
 
-const mongoURI = process.env.ATLAS_URI //"mongodb+srv://KOussama:7lCWUmzAZbCw0u5R@myfirstcluster.ju8yrvu.mongodb.net/" //'mongodb://localhost:27017/' + config.name
+const mongoURI = process.env.ATLAS_URI
 
 //let mongoURI = process.env.ATLAS_URI+process.env.DATABASE_NAME
 //mongoURI = mongoURI.toString()

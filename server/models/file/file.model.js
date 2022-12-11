@@ -23,10 +23,8 @@ const FileModel = new mongoose.Schema({
 const File = mongoose.model('File', FileModel, 'File')
 
 var config = JSON.parse(fs.readFileSync('config.json', 'utf8'))
-//const mongoURI = 'mongodb://localhost:27017/' + config.name
 
-//let mongoURI = process.env.ATLAS_URI+process.env.DATABASE_NAME
-mongoURI = process.env.ATLAS_URI //"mongodb+srv://KOussama:7lCWUmzAZbCw0u5R@myfirstcluster.ju8yrvu.mongodb.net/" // 'mongodb://localhost:27017/' + config.name
+mongoURI = process.env.ATLAS_URI
 
 mongoose.connect(
     mongoURI,

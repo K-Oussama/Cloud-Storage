@@ -113,3 +113,4 @@ yarn.lock
 ./client/build
 ./client/yarn.lock
 ./server/yarn.lock
+./server/config.env
